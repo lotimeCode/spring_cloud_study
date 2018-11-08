@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @version create 2018/11/7 16:37
  */
 @RestController
-@RequestMapping(value = "/demo")
-public class DemoController {
+@RequestMapping(value = "/serve1")
+public class ServerController1 {
 
     @RequestMapping(value = "/test1",method = RequestMethod.GET)
     public String testDemo1(@RequestParam("name")String name){
         System.out.println("myServer1 receive : " + name);
-        return "my service receive name : " + name;
+        return "serve1_test1 : name=" + name;
     }
 }

@@ -25,4 +25,4 @@ feign:
 
 logging:
   level:
-    com.netflix: INFO
+    com.netflix: DEBUG

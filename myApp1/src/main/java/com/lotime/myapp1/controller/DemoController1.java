@@ -1,6 +1,6 @@
 package com.lotime.myapp1.controller;
 
-import com.lotime.myapp1.feginController.server.ServerDemoClient;
+import com.lotime.myapp1.client.ServerClient1;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,15 +11,15 @@ import javax.annotation.Resource;
  * @version create 2018/11/7 16:41
  */
 @RestController
-@RequestMapping("/app")
-public class DemoController {
+@RequestMapping("/app1")
+public class DemoController1 {
 
     @Resource
-    private ServerDemoClient serverDemoClient;
+    private ServerClient1 serverClient1;
 
-    @RequestMapping(value = "/test")
+    @RequestMapping(value = "/test1")
     public String getAllStr(){
         System.out.println("app come in ...");
-        return "my app come in, receive message from server : " + serverDemoClient.testDemo1("lotime");
+        return "my app come in, receive message from server : " + serverClient1.server1Test1("lotime");
     }
 }
