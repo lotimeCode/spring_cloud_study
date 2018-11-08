@@ -1,0 +1,14 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: myService1
+eureka:
+  client:
+    service-url:
+      defaultZone: http://118.24.241.25:8761/eureka
+
+
+logging:
+  level:
+    com.netflix: INFO
