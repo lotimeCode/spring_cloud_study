@@ -5,7 +5,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh,health,info,beans,conditions,configprops,env,loggers,metrics,mappings,threaddump
+        include: "*"
 spring:
   application:
     name: myApp1

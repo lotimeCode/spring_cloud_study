@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="dashboard" />
         <module name="EurekaSerevrInTencentCloud" />
         <module name="gateway" />
         <module name="myApp1" />
@@ -13,6 +14,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="dashboard" target="1.8" />
       <module name="EurekaSerevrInTencentCloud" target="1.8" />
       <module name="gateway" target="1.8" />
       <module name="myApp1" target="1.8" />

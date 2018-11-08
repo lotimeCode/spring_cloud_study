@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/myApp1/pom.xml" />
         <option value="$PROJECT_DIR$/myService1/pom.xml" />
+        <option value="$PROJECT_DIR$/dashboard/pom.xml" />
       </list>
     </option>
   </component>

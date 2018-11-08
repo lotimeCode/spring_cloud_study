@@ -8,6 +8,11 @@ eureka:
     service-url:
       defaultZone: http://118.24.241.25:8761/eureka
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,beans,conditions,configprops,env,loggers,metrics,mappings,threaddump,hystrix.stream
 
 logging:
   level:
