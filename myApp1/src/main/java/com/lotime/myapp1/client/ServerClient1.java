@@ -1,10 +1,14 @@
 package com.lotime.myapp1.client;
 
+import com.lotime.myapp1.entity.User;
 import com.lotime.myapp1.hystrix.ServerDemoClientHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 /**
  * @author wangzhimin
@@ -21,4 +25,11 @@ public interface ServerClient1 {
 
     @RequestMapping(value = "/server2/test2",method = RequestMethod.GET)
     public String server2Test2(@RequestParam("id")Integer id);
+
+
+    @RequestMapping(value = "/user/{id}",method = RequestMethod.GET)
+    User getUserById(@PathVariable("id")Integer id);
+
+    @RequestMapping(value = "/user",method = RequestMethod.GET)
+    List<User> getUserListByIds(@RequestParam("ids")List<Integer> ids);
 }

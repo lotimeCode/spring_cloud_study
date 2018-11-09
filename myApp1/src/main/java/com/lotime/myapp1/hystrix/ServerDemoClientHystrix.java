@@ -1,7 +1,11 @@
 package com.lotime.myapp1.hystrix;
 
 import com.lotime.myapp1.client.ServerClient1;
+import com.lotime.myapp1.entity.User;
 import org.springframework.stereotype.Component;
+
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author wangzhimin
@@ -23,5 +27,15 @@ public class ServerDemoClientHystrix implements ServerClient1 {
     @Override
     public String server2Test2(Integer id) {
         return "server2Test2 服务降级";
+    }
+
+    @Override
+    public User getUserById(Integer id) {
+        return new User();
+    }
+
+    @Override
+    public List<User> getUserListByIds(List<Integer> ids) {
+        return Collections.emptyList();
     }
 }
